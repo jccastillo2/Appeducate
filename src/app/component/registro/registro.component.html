@@ -13,19 +13,23 @@
           <ion-card-content>
             <ion-item >
               <ion-label  position="floating">Nombres</ion-label>
-              <ion-input type="string"></ion-input>
+              <ion-input type="string"[(ngModel)]="DatosU.nombre"></ion-input>
             </ion-item>
             <ion-item >
               <ion-label  position="floating">Apellidos</ion-label>
-              <ion-input type="string" ></ion-input>
+              <ion-input type="string"[(ngModel)]="DatosU.apellidos"></ion-input>
             </ion-item>
             <ion-item >
               <ion-label  position="floating">Edad</ion-label>
-              <ion-input type="string"></ion-input>
+              <ion-input type="number"[(ngModel)]="DatosU.edad"></ion-input>
             </ion-item>
             <ion-item >
               <ion-label  position="floating">Correo</ion-label>
-              <ion-input type="string"></ion-input>
+              <ion-input type="string"[(ngModel)]="DatosU.correo"></ion-input>
+            </ion-item>
+            <ion-item >
+              <ion-label  position="floating">Password</ion-label>
+              <ion-input type="password"[(ngModel)]="DatosU.password"></ion-input>
             </ion-item>
           <ion-button expand="full">Registrarme</ion-button>
         </ion-card-content>
