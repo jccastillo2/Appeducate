@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { Usuario } from '../models/models';
 
 @Component({
@@ -18,5 +19,11 @@ export class RegistroComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}
+
+  registrar(){
+    console.log(this.DatosU)
+    this.ngOnInit
+    //RouterLink="home"
+  }
 
 }
